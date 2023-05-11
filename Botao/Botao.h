@@ -1,0 +1,17 @@
+#ifndef _BOTAO_h
+#define _BOTAO_h
+// As duas linhas acima são diretivas de compilação condicional, que usualmente constam nesta mesma forma (alterando apenas o nome da biblioteca) em todos os arquivos de cabeçalho. Sua finalidade é evitar problemas caso um mesmo programa tente incluir indevidamente mais de uma vez a mesma biblioteca.
+
+#include "Arduino.h"
+// A linha acima faz com que a biblioteca possa usar os tipos e outras definições do próprio Arduino.
+
+class Botao {
+	public:
+    Botao(pino);
+		void begin();
+    int estado_botao();
+	private:
+		int pino;
+	};
+
+#endif
